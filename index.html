@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clash Royale - Formularios y Contador</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Enlace al archivo CSS externo -->
+    <script src="scripts.js" defer></script> <!-- Enlace al archivo JS externo -->
+</head>
+<body>
+    <!-- Formulario de inicio de sesión -->
+    <div class="form-container">
+            <h4>Acceso de Usuarios</h4>
+            <form id="login-form">
+                <h5>Usuario</h5>
+                <input type="text" id="Usuarios" placeholder="Ingresa tu usuario">
+                <h5>Contraseña</h5>
+                <input type="password" id="clave" placeholder="Ingresa tu contraseña">
+                <br><br>
+                <input type="button" value="Confirmar" onclick="verificar()">
+            </form>
+       
+
+        <div class="container">
+            <h1>Bienvenido a Clash Royale</h1>
+            <p>Clash Royale es un juego de estrategia en tiempo real desarrollado por Supercell. En él, los jugadores compiten en batallas en tiempo real utilizando cartas que representan tropas, hechizos y estructuras.</p>
+            <p>El objetivo del juego es destruir las torres del oponente mientras defiendes tus propias torres. Cada victoria otorga trofeos y recompensas, y el juego incluye una variedad de modos y eventos especiales.</p>
+            <p>Para obtener más información, visita el sitio oficial de Clash Royale o únete a la comunidad en línea para estrategias y consejos.</p>
+        </div>
+        <!-- Contador de daño -->
+        <div class="counter-container">
+            <h4>Contador de Daño</h4>
+            <input type="button" value="Asumir daño" onclick="incremento()">
+        </div>
+
+        <!-- Formulario de contacto -->
+        <div class="form-container">
+            <h3>Formulario de Contacto</h3>
+            <form id="myform">
+                <label for="name">Nombre:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="message">Mensaje:</label>
+                <textarea id="message" name="message" required></textarea>
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

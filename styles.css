@@ -1,0 +1,95 @@
+/* Estilo general del cuerpo de la página */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #1c1c1c; /* Color de fondo oscuro */
+    color: #ffffff; /* Color del texto blanco */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+}
+
+/* Estilo del contenedor principal */
+.container {
+    text-align: center;
+    background-color: #333333; /* Color de fondo del contenedor */
+    padding: 20px;
+    border-radius: 8px;
+    width: 90%;
+    max-width: 800px;
+}
+
+/* Estilo del formulario */
+.form-container, .counter-container {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+    width: 90%;
+    max-width: 500px;
+    text-align: left;
+}
+
+.form-container h4, .counter-container h4 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.form-container h3 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.form-container label, .counter-container label {
+    display: block;
+    margin-bottom: 5px;
+    color: #555;
+}
+
+.form-container input[type="text"], .form-container input[type="email"], .form-container textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.form-container textarea {
+    height: 100px;
+    resize: vertical;
+}
+
+.form-container button {
+    background-color: #28a745; /* Color de fondo del botón */
+    color: #ffffff; /* Color del texto del botón */
+    border: none;
+    padding: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 16px;
+}
+
+.form-container button:hover {
+    background-color: #218838; /* Color de fondo del botón al pasar el cursor */
+}
+
+.counter-container input[type="button"] {
+    background-color: #007bff; /* Color de fondo del botón */
+    color: #ffffff; /* Color del texto del botón */
+    border: none;
+    padding: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 16px;
+}
+
+.counter-container input[type="button"]:hover {
+    background-color: #0056b3; /* Color de fondo del botón al pasar el cursor */
+}
