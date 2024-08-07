@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clash Royale Fan Page</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Encabezado de la página -->
+    <header>
+        <h1>Bienvenido a la página de fans de Clash Royale</h1>
+        <nav>
+            <ul>
+                <!-- Enlaces de navegación -->
+                <li><a href="index.html"><button id="logoutButton" href="index.html">Iniciar Sesión</button></a></li>
+                <li><a href="registro.html"><button id="logoutButton" href="registro.html">Registro</button></a></li>
+                <li><a href="contacto.html"><button id="logoutButton" href="contacto.html">Contacto</button></a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <!-- Sección de contacto -->
+        <section id="contact">
+            <h2>Contacto</h2>
+            <form id="contactForm">
+                <label for="contactName">Nombre:</label>
+                <input type="text" id="contactName" name="contactName" required>
+                <label for="contactEmail">Correo Electrónico:</label>
+                <input type="email" id="contactEmail" name="contactEmail" required>
+                <label for="contactMessage">Mensaje:</label>
+                <textarea id="contactMessage" name="contactMessage" required></textarea>
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+    </main>
+
+    <!-- Pie de página -->
+    <footer>
+        <p>&copy; 2024 Clash Royale Fan Page</p>
+    </footer>
+
+    <!-- Archivo JavaScript -->
+    <script src="scripts.js"></script>
+</body>
+</html>
