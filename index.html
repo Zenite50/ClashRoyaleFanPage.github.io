@@ -3,49 +3,71 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Clash Royale - Formularios y Contador</title>
-    <link rel="stylesheet" href="styles.css"> <!-- Enlace al archivo CSS externo -->
-    <script src="scripts.js" defer></script> <!-- Enlace al archivo JS externo -->
+    <title>Clash Royale Fan Page</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!-- Formulario de inicio de sesión -->
-    <div class="form-container">
-            <h4>Acceso de Usuarios</h4>
-            <form id="login-form">
-                <h5>Usuario</h5>
-                <input type="text" id="Usuarios" placeholder="Ingresa tu usuario">
-                <h5>Contraseña</h5>
-                <input type="password" id="clave" placeholder="Ingresa tu contraseña">
-                <br><br>
-                <input type="button" value="Confirmar" onclick="verificar()">
+    <!-- Encabezado de la página -->
+    <header>
+        <h1>Bienvenido a la página de fans de Clash Royale</h1>
+        <nav>
+            <ul>
+                <!-- Enlaces de navegación -->
+                <li><a href="#login">Inicio de Sesión</a></li>
+                <li><a href="#register">Registro</a></li>
+                <li><a href="#contact">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <!-- Sección de inicio de sesión -->
+        <section id="login">
+            <h2>Inicio de Sesión</h2>
+            <form id="loginForm">
+                <label for="loginUsername">Usuario:</label>
+                <input type="text" id="loginUsername" name="loginUsername" required>
+                <label for="loginPassword">Contraseña:</label>
+                <input type="password" id="loginPassword" name="loginPassword" required>
+                <button type="submit">Iniciar Sesión</button>
             </form>
-       
+        </section>
 
-        <div class="container">
-            <h1>Bienvenido a Clash Royale</h1>
-            <p>Clash Royale es un juego de estrategia en tiempo real desarrollado por Supercell. En él, los jugadores compiten en batallas en tiempo real utilizando cartas que representan tropas, hechizos y estructuras.</p>
-            <p>El objetivo del juego es destruir las torres del oponente mientras defiendes tus propias torres. Cada victoria otorga trofeos y recompensas, y el juego incluye una variedad de modos y eventos especiales.</p>
-            <p>Para obtener más información, visita el sitio oficial de Clash Royale o únete a la comunidad en línea para estrategias y consejos.</p>
-        </div>
-        <!-- Contador de daño -->
-        <div class="counter-container">
-            <h4>Contador de Daño</h4>
-            <input type="button" value="Asumir daño" onclick="incremento()">
-        </div>
+        <!-- Sección de registro -->
+        <section id="register">
+            <h2>Registro</h2>
+            <form id="registerForm">
+                <label for="registerUsername">Usuario:</label>
+                <input type="text" id="registerUsername" name="registerUsername" required>
+                <label for="registerEmail">Correo Electrónico:</label>
+                <input type="email" id="registerEmail" name="registerEmail" required>
+                <label for="registerPassword">Contraseña:</label>
+                <input type="password" id="registerPassword" name="registerPassword" required>
+                <button type="submit">Registrarse</button>
+            </form>
+        </section>
 
-        <!-- Formulario de contacto -->
-        <div class="form-container">
-            <h3>¿Cual es tu opinion sobre el juego?</h3>
-            <form id="myform">
-                <label for="name">Nombre completo:</label>
-                <input type="text" id="name" name="name" required>
-                <label for="email">Nombre de usuario del juego:</label>
-                <input type="email" id="email" name="email" required>
-                <label for="message">Opinion:</label>
-                <textarea id="message" name="message" required></textarea>
+        <!-- Sección de contacto -->
+        <section id="contact">
+            <h2>Contacto</h2>
+            <form id="contactForm">
+                <label for="contactName">Nombre:</label>
+                <input type="text" id="contactName" name="contactName" required>
+                <label for="contactEmail">Correo Electrónico:</label>
+                <input type="email" id="contactEmail" name="contactEmail" required>
+                <label for="contactMessage">Mensaje:</label>
+                <textarea id="contactMessage" name="contactMessage" required></textarea>
                 <button type="submit">Enviar</button>
             </form>
-        </div>
-    </div>
+        </section>
+    </main>
+
+    <!-- Pie de página -->
+    <footer>
+        <p>&copy; 2024 Clash Royale Fan Page</p>
+    </footer>
+
+    <!-- Archivo JavaScript -->
+    <script src="scripts.js"></script>
 </body>
 </html>
