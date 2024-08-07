@@ -1,40 +1,28 @@
-// Función para el formulario de inicio de sesión
-function verificar() {
-    const contraseña = 'pass';
-    const clave = document.getElementById('clave').value;
+// Manejo del formulario de inicio de sesión
+document.getElementById('loginForm').addEventListener('submit', function(event) {
+    event.preventDefault(); // Previene el comportamiento por defecto del formulario
+    alert('Inicio de sesión exitoso'); // Muestra una alerta de éxito
+    window.location.href = 'info.html'; // Redirige a la página de información
+});
 
-    if (clave !== contraseña) {
-        alert('La contraseña es incorrecta');
-    } else {
-        window.location.href = "https://supercell.com/en/games/clashroyale/"; // Reemplaza esta URL con la URL deseada
-    }
-}
+// Manejo del formulario de registro
+document.getElementById('registerForm').addEventListener('submit', function(event) {
+    event.preventDefault(); // Previene el comportamiento por defecto del formulario
+    alert('Registro exitoso'); // Muestra una alerta de éxito
+});
 
-// Función para el contador de daño
-let contador = 0;
+// Manejo del formulario de contacto
+document.getElementById('contactForm').addEventListener('submit', function(event) {
+    event.preventDefault(); // Previene el comportamiento por defecto del formulario
+    alert('Mensaje enviado'); // Muestra una alerta de éxito
+});
 
-function incremento() {
-    contador++;
-    alert("Has asumido: " + contador + " hp de daño");
-}
-
-// Función para el formulario de contacto
+// Manejo del botón de cerrar sesión
 document.addEventListener('DOMContentLoaded', function() {
-    const form = document.getElementById('myform');
-
-    form.addEventListener('submit', function(event) {
-        event.preventDefault();
-
-        const name = document.getElementById('name').value;
-        const email = document.getElementById('email').value;
-        const message = document.getElementById('message').value;
-
-        if (name === '' || email === '' || message === '') {
-            alert('Por favor completa todos los campos.');
-        } else {
-            // Aquí puedes enviar el formulario o realizar otras acciones
-            alert('Formulario enviado exitosamente.');
-            form.reset();
-        }
-    });
+    if(document.getElementById('logoutButton')) {
+        document.getElementById('logoutButton').addEventListener('click', function() {
+            alert('Sesión cerrada'); // Muestra una alerta de cierre de sesión
+            window.location.href = 'index.html'; // Redirige a la página principal
+        });
+    }
 });
